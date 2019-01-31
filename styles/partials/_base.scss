@@ -1,0 +1,19 @@
+html {
+  font-size: 125%;
+}
+
+body {
+  font-family: $primaryFont;
+  font-size: 1.95rem;
+  color: $accentColor2;
+  background-color: $primaryColor;
+}
+
+.wrapper {
+  max-width: 1600px;
+}
+
+.wrapperSmall {
+  max-width: 1280px;
+  width: 80%;
+}
