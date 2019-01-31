@@ -10,9 +10,13 @@ body {
 .wrapper {
   max-width: 1600px; }
 
-.wrapperSmall {
+.wrapperMedium {
   max-width: 1280px;
   width: 80%; }
+
+.wrapperSmall {
+  max-width: 1120px;
+  width: 70%; }
 
 article, aside, details, figcaption, figure, footer, header, hgroup, nav, section, summary {
   display: block; }
