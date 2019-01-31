@@ -13,6 +13,7 @@
 <body>
   <div class="wrapper">
     <header>
+      <a href="#main" class="skip-link">Skip to main content</a>
       <div class="wrapperMedium">
         <div class="headerNav">
           <ul>
@@ -32,20 +33,26 @@
     </header>
     <main>
       <div class="wrapperMedium">
-        <div class="contactInfo">
+        <section class="contactInfo" id="main">
           <div class="icons">
-            <i class="fab fa-facebook-f"></i>
-            <i class="fab fa-instagram"></i>
-            <i class="fab fa-twitter"></i>
-            <i class="fab fa-whatsapp"></i>
+            <ul>
+                <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Click here for
+                  our Facebook link</span></a></li>
+                <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Click here for
+                  our Instagram link</span></a></li>
+                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Click here for
+                  our Twitter link</span></a></li>
+                <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i><span class="sr-only">Click here for
+                  our Whatsapp link</span></a></li>
+            </ul>
           </div>
           <p>info@email.com</p>
           <p>123-456-7890</p>
           <p>123 Queen Street West, Unit 10</p>
           <p>Toronto, Ontario</p>
           <p>M5V 2D5</p>
-        </div>
-        <div class="contactForm">
+        </section>
+        <section class="contactForm">
           <form action="" method="POST" name="blogContactForm" class="form">
             <label for="name" class="visuallyHidden">Name</label>
             <input type="text" id="name" name="name" placeholder="Name" required>
@@ -55,7 +62,7 @@
             <textarea name="message" cols="10" rows="10" placeholder="Message" required></textarea>
             <input type="submit" value="Submit">
           </form>
-        </div>
+        </section>
       </div>
     </main>
     <footer>

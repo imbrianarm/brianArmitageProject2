@@ -13,6 +13,7 @@
 <body>
   <div class="wrapper">
     <header>
+      <a href="#main" class="skip-link">Skip to main content</a>
       <div class="wrapperMedium">
         <div class="headerNav">
           <ul>
@@ -29,7 +30,7 @@
       </div>
     </header>
     <main>
-      <section class="mission">
+      <section class="mission" id="main">
         <div class="missionImage">
           <img src="images/sidebarImage.jpg" alt="A glass of beer pouring out of the tap">
         </div>
@@ -52,7 +53,10 @@
       <section class="blog">
         <div class="wrapperMedium">
           <div class="blogImage">
-            <img src="images/postImage.png" alt="Picture of our 3 new salads">
+            <picture>
+              <source srcset="images/postImage.png" media="(min-width: 980px)">
+              <img src="images/postImage.jpg" alt="Picture of our 3 new salads">
+            </picture>
           </div>
           <div class="blogMain">
             <h2>New menu!</h2>
