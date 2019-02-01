@@ -169,14 +169,6 @@ body {
   background-color: #111010;
   letter-spacing: .095rem; }
 
-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-
-footer p {
-  margin: 0; }
-
 .wrapper {
   max-width: 1600px;
   width: 100%;
@@ -192,8 +184,24 @@ footer p {
   width: 70%;
   margin: 0 auto; }
 
+header .wrapperMedium {
+  height: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
 footer {
   background-color: darkslategrey; }
+
+footer p {
+  margin: 0; }
 
 h1, h2, h3 {
   margin: 0;
@@ -212,22 +220,24 @@ h2 {
   letter-spacing: .11rem; }
 
 ul {
-  margin: 0; }
+  margin: 0;
+  padding: 0; }
 
 p {
   margin: 0; }
 
-.mainNav {
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+.mainNav ul {
   display: -webkit-box;
   display: -ms-flexbox;
-  display: flex; }
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
 
 .mainNav li {
   list-style: none;
-  display: inline-block; }
+  display: inline-block;
+  padding: 2rem 2rem; }
 
 .mainNav a:link,
 .mainNav a:visited {
@@ -270,6 +280,25 @@ p {
   background-image: url(../images/homeImage1.jpg);
   background-size: cover; }
 
+header .wrapper {
+  position: relative;
+  height: 40rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center; }
+
+.headerTitle {
+  position: absolute;
+  bottom: 100px;
+  z-index: 1; }
+
 .headerTitle h1 {
   font-family: "Tulpen One", cursive;
   color: #ff8327;
@@ -284,7 +313,10 @@ p {
   letter-spacing: .13rem; }
 
 .headerImage img {
-  display: inline-block; }
+  display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: -100px; }
 
 .planAhead {
   background-color: #220303; }

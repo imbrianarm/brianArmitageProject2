@@ -3,8 +3,18 @@
   background-size: cover;
 }
 
-.headerTitle {
+header .wrapper {
+  position: relative;
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.headerTitle {
+  position: absolute;
+  bottom: 100px;
+  z-index: 1;
 }
 
 .headerTitle h1{
@@ -24,10 +34,14 @@
 
 
 .headerImage {
-
+  // width: 20rem;
 }
 .headerImage img {
   display: inline-block;
+  position: absolute;
+  right: 0;
+  bottom: -100px;
+  // width: 40%;
 }
 
 .planAhead {

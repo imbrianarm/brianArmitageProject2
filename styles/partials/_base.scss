@@ -10,14 +10,6 @@ body {
   letter-spacing: .095rem;
 }
 
-header {
-  display: flex;
-}
-
-footer p {
-  margin: 0;
-}
-
 .wrapper {
   max-width: 1600px;
   width: 100%;
@@ -36,8 +28,19 @@ footer p {
   margin: 0 auto;
 }
 
+header .wrapperMedium {
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 footer {
   background-color: darkslategrey;
+}
+
+footer p {
+  margin: 0;
 }
 
 h1, h2, h3 {
@@ -61,20 +64,22 @@ h2 {
 
 ul {
   margin: 0;
+  padding: 0;
 }
 
 p {
   margin: 0;
 }
 
-.mainNav {
-  justify-content: center;
+.mainNav ul{
   display: flex;
+  align-items: center;
 }
 
 .mainNav li {
   list-style: none;
   display: inline-block;
+  padding: 2rem 2rem;
 }
 
 .mainNav a:link,
