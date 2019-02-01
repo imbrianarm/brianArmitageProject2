@@ -1,0 +1,39 @@
+.homeHeader {
+  background-image: url(../images/homeImage1.jpg);
+  background-size: cover;
+}
+
+.headerTitle {
+
+}
+
+.headerTitle h1{
+  font-family: $secondaryFont;
+  color: $secondaryColor;
+  font-size: 13.07rem;
+  letter-spacing: .12rem;
+}
+
+.headerTitle span {
+  color: $accentColor2;
+  font-size: 4.16rem;
+  font-weight: bold;
+  line-height: 4.735rem;
+  letter-spacing: .13rem;
+}
+
+
+.headerImage {
+
+}
+.headerImage img {
+  display: inline-block;
+}
+
+.planAhead {
+  background-color: $secondaryBackground
+}
+
+.imageGallery {
+  background-color: $secondaryBackground
+}

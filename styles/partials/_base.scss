@@ -7,18 +7,94 @@ body {
   font-size: 1.95rem;
   color: $accentColor2;
   background-color: $primaryColor;
+  letter-spacing: .095rem;
+}
+
+header {
+  display: flex;
+}
+
+footer p {
+  margin: 0;
 }
 
 .wrapper {
   max-width: 1600px;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .wrapperMedium {
   max-width: 1280px;
   width: 80%;
+  margin: 0 auto;
 }
 
 .wrapperSmall {
   max-width: 1120px;
   width: 70%;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: darkslategrey;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 4.16rem;
+  font-weight: bold;
+  line-height: 4.735rem;
+  letter-spacing: .13rem;
+}
+
+h2 {
+  font-size: 3.4rem;
+  font-weight: bold;
+  line-height: 2.9rem;
+  letter-spacing: .11rem;
+}
+
+ul {
+  margin: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.mainNav {
+  justify-content: center;
+  display: flex;
+}
+
+.mainNav li {
+  list-style: none;
+  display: inline-block;
+}
+
+.mainNav a:link,
+.mainNav a:visited {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: $accentColor2;
+  text-transform: uppercase;
+  line-height: 1.45rem;
+  text-decoration: none;
+  list-style: none;
+  transition: all .2s;
+}
+
+.mainNav a:hover,
+.mainNav a:active { color: $secondaryColor; }
+
+.mainNav h1 {
+  font-family: $secondaryFont;
+  font-size: 4rem;
+  letter-spacing: .12rem;
+  display: inline-block;
 }

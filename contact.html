@@ -11,63 +11,63 @@
   <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <a href="#main" class="skip-link">Skip to main content</a>
-      <div class="wrapperMedium">
-        <div class="headerNav">
+  <header class="contactHeader">
+    <a href="#main" class="skip-link">Skip to main content</a>
+    <div class="wrapperMedium">
+      <div class="headerNav mainNav">
+        <ul>
+          <li><a href="index.html">home</a></li>
+          <li><a href="index.html#about">about</a></li>
+          <li>
+            <h1>Bar-One</h1>
+          </li>
+          <li><a href="blog.html">blog</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </div>
+      <div class="blogHeading">
+        <h1>Get in Touch</h1>
+      </div>
+    </div>
+  </header>
+  <main>
+    <div class="wrapperMedium">
+      <section class="contactInfo" id="main">
+        <div class="icons">
           <ul>
-            <li><a href="index.html">home</a></li>
-            <li><a href="index.html#about">about</a></li>
-            <li>
-              <h1>Bar-One</h1>
-            </li>
-            <li><a href="blog.html">blog</a></li>
-            <li><a href="#">contact</a></li>
+              <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Click here for
+                our Facebook link</span></a></li>
+              <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Click here for
+                our Instagram link</span></a></li>
+              <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Click here for
+                our Twitter link</span></a></li>
+              <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i><span class="sr-only">Click here for
+                our Whatsapp link</span></a></li>
           </ul>
         </div>
-        <div class="blogHeading">
-          <h1>Get in Touch</h1>
-        </div>
-      </div>
-    </header>
-    <main>
-      <div class="wrapperMedium">
-        <section class="contactInfo" id="main">
-          <div class="icons">
-            <ul>
-                <li><a href="#"><i class="fab fa-facebook-f" aria-hidden="true"></i><span class="sr-only">Click here for
-                  our Facebook link</span></a></li>
-                <li><a href="#"><i class="fab fa-instagram" aria-hidden="true"></i><span class="sr-only">Click here for
-                  our Instagram link</span></a></li>
-                <li><a href="#"><i class="fab fa-twitter" aria-hidden="true"></i><span class="sr-only">Click here for
-                  our Twitter link</span></a></li>
-                <li><a href="#"><i class="fab fa-whatsapp" aria-hidden="true"></i><span class="sr-only">Click here for
-                  our Whatsapp link</span></a></li>
-            </ul>
-          </div>
-          <p>info@email.com</p>
-          <p>123-456-7890</p>
-          <p>123 Queen Street West, Unit 10</p>
-          <p>Toronto, Ontario</p>
-          <p>M5V 2D5</p>
-        </section>
-        <section class="contactForm">
-          <form action="" method="POST" name="blogContactForm" class="form">
-            <label for="name" class="visuallyHidden">Name</label>
-            <input type="text" id="name" name="name" placeholder="Name" required>
-            <label for="email" class="visuallyHidden">Email address</label>
-            <input type="email" id="email" name="email" placeholder="Email address" required>
-            <label for="message" class="visuallyHidden">Message</label>
-            <textarea name="message" cols="10" rows="10" placeholder="Message" required></textarea>
-            <input type="submit" value="Submit">
-          </form>
-        </section>
-      </div>
-    </main>
-    <footer>
+        <p>info@email.com</p>
+        <p>123-456-7890</p>
+        <p>123 Queen Street West, Unit 10</p>
+        <p>Toronto, Ontario</p>
+        <p>M5V 2D5</p>
+      </section>
+      <section class="contactForm">
+        <form action="" method="POST" name="blogContactForm" class="form">
+          <label for="name" class="visuallyHidden">Name</label>
+          <input type="text" id="name" name="name" placeholder="Name" required>
+          <label for="email" class="visuallyHidden">Email address</label>
+          <input type="email" id="email" name="email" placeholder="Email address" required>
+          <label for="message" class="visuallyHidden">Message</label>
+          <textarea name="message" cols="10" rows="10" placeholder="Message" required></textarea>
+          <input type="submit" value="Submit">
+        </form>
+      </section>
+    </div>
+  </main>
+  <footer>
+    <div class="wrapper">
       <p>Copyright 2019 &copy; HackerYou</p>
-    </footer>
-  </div>
+    </div>
+  </footer>
 </body>
 </html>
