@@ -1,0 +1,94 @@
+.about .wrapper,
+.events .wrapper,
+.imageGallery .wrapper {
+  max-width: 1280px;  
+  width: 80%;
+  margin: 0 auto;
+}
+
+.host .wrapper {
+  max-width: 1120px;
+  width: 70%;
+  margin: 0 auto;
+}
+
+header .wrapper {
+  height: 40rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contactHeader .wrapper,
+.blogHeader .wrapper {
+  height: 30rem;
+}
+
+footer {
+  background-color: $footerBackground;
+}
+
+footer p {
+  margin: 0;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  font-size: 4.16rem;
+  font-weight: bold;
+  line-height: 4.735rem;
+  letter-spacing: .13rem;
+}
+
+h2 {
+  font-size: 3.4rem;
+  font-weight: bold;
+  line-height: 2.9rem;
+  letter-spacing: .11rem;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  margin: 0;
+}
+
+.mainNav ul{
+  display: flex;
+  align-items: center;
+}
+
+.mainNav li {
+  list-style: none;
+  display: inline-block;
+  padding: 2rem 2rem;
+}
+
+.mainNav a:link,
+.mainNav a:visited {
+  font-size: 1.9rem;
+  font-weight: bold;
+  color: $accentColor2;
+  text-transform: uppercase;
+  line-height: 1.45rem;
+  text-decoration: none;
+  list-style: none;
+  transition: all .2s;
+}
+
+.mainNav a:hover,
+.mainNav a:active { color: $secondaryColor; }
+
+.mainNav h1 {
+  font-family: $secondaryFont;
+  font-size: 4rem;
+  letter-spacing: .12rem;
+  display: inline-block;
+}

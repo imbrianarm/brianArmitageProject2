@@ -199,6 +199,10 @@ header .wrapper {
   -ms-flex-align: center;
   align-items: center; }
 
+.contactHeader .wrapper,
+.blogHeader .wrapper {
+  height: 30rem; }
+
 footer {
   background-color: #2F4F4F; }
 
