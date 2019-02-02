@@ -174,17 +174,19 @@ body {
   width: 100%;
   margin: 0 auto; }
 
-.wrapperMedium {
+.about .wrapper,
+.events .wrapper,
+.imageGallery .wrapper {
   max-width: 1280px;
   width: 80%;
   margin: 0 auto; }
 
-.wrapperSmall {
+.host .wrapper {
   max-width: 1120px;
   width: 70%;
   margin: 0 auto; }
 
-header .wrapperMedium {
+header .wrapper {
   height: 40rem;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -198,7 +200,7 @@ header .wrapperMedium {
   align-items: center; }
 
 footer {
-  background-color: darkslategrey; }
+  background-color: #2F4F4F; }
 
 footer p {
   margin: 0; }
