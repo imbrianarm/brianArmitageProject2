@@ -5,9 +5,96 @@
 
 .contactInfo {
   width: 30%;
+  padding-top: 5rem;
+  padding-right: 4rem;
 }
+
+.icons ul{
+  display: flex;
+  align-items: center;
+}
+
+.icons li {
+  list-style: none;
+  display: inline-block;
+  padding: 1rem .75rem;
+  font-size: 1.5rem;
+}
+
+.icons li:first-child {
+  padding-left: 0;
+}
+
+.icons a:link,
+.icons a:visited {
+  color: $accentColor2;
+}
+
+.fa-facebook-f:hover,
+.fa-facebook-f:active { 
+  color: $facebookColor; 
+  transition: all .2s;
+}
+
+.fa-twitter:hover,
+.fa-twitter:active { 
+  color: $twitterColor;
+  transition: all .2s;
+}
+
+.fa-instagram:hover,
+.fa-instagram:active { 
+  color: $instagramColor;
+  transition: all .2s; 
+}
+
+.fa-whatsapp:hover,
+.fa-whatsapp:active { 
+  color: $whatsappColor;
+  transition: all .2s;
+}
+
+.mailTo {
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.mailTo:link,
+.mailTo:visited, {
+  color: $accentColor2;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.mailTo:hover,
+.mailTo:active { color: $secondaryColor; }
 
 .contactForm {
   background-color: $secondaryBackground;
   width: 70%;
+  padding: 4rem 5% 3rem 5%;
+  margin-bottom: -3rem;
+  box-shadow: 1rem 1rem 0px 0px $secondaryColor;
+  position: relative;
+  top: -10rem;
+}
+
+.contactForm form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 3rem;
+}
+
+.contactForm input[type=text],
+.contactForm input[type=email] {
+  border-bottom: .1rem solid $accentColor2;
+  background-color: $secondaryBackground;
+  padding: 0 0 1rem 1.5rem;
+}
+
+.contactForm textarea {
+  color: $accentColor2;
+  height: 12rem;
+  border: .1rem solid $accentColor2; 
+  background-color: $secondaryBackground;
 }
