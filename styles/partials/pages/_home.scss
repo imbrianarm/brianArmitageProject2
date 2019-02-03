@@ -21,6 +21,7 @@ header .wrapper {
   color: $secondaryColor;
   font-size: 13.07rem;
   letter-spacing: .12rem;
+  line-height: 2.5rem;
 }
 
 .headerTitle span {
@@ -28,7 +29,6 @@ header .wrapper {
   font-size: 4.16rem;
   font-weight: bold;
   color: $accentColor2;
-  line-height: 1rem;
   letter-spacing: .13rem;
 }
 
@@ -36,7 +36,7 @@ header .wrapper {
   display: inline-block;
   position: absolute;
   right: 0;
-  bottom: -100px;
+  bottom: -5rem;
 }
 
 .about {

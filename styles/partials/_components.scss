@@ -16,12 +16,15 @@ header .wrapper {
   height: 40rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-content: center;
 }
 
 .contactHeader .wrapper,
 .blogHeader .wrapper {
   height: 30rem;
+  max-width: 1280px;  
+  width: 80%;
+  margin: 0 auto;
 }
 
 footer {
@@ -65,17 +68,24 @@ img {
   display: inline-block;
 }
 
-button {
+button,
+input[type=submit] {
   font-family: $secondaryFont;
   color: $accentColor2;
+  letter-spacing: .095rem;
   border: 0;
   background: $accentColor;
   padding: .5rem 1.6rem;
   transition: all .2s;
 }
 
-button:hover {
+button:hover,
+input[type=submit]:hover {
 	background-color: $footerBackground;
+}
+
+input[type=submit] {
+  width: 100%;
 }
 
 .mainNav ul{
@@ -109,4 +119,22 @@ button:hover {
   font-size: 4rem;
   letter-spacing: .12rem;
   display: inline-block;
+}
+
+.mainNav h1 {
+  font-family: $secondaryFont;
+  font-size: 4rem;
+  letter-spacing: .12rem;
+  display: inline-block;
+}
+
+.blogHeading {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+
+  h1 {
+    font-size: 7rem;
+  }
 }
