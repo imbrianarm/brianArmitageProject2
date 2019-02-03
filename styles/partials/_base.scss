@@ -8,10 +8,13 @@ body {
   color: $accentColor2;
   background-color: $primaryColor;
   letter-spacing: .095rem;
+  line-height: .8;
 }
 
 .wrapper {
   max-width: 1600px;
   width: 100%;
   margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
 }
