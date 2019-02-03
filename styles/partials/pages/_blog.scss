@@ -14,10 +14,59 @@
 // }
 
 .mission {
-  background-color: $secondaryBackground;
   width: 30%;
-  // margin: 0 -5rem 0 -5rem;
+  margin-top: 5rem;
+  position: relative;
 }
+
+.missionImage {
+  position: absolute;
+  left: 0;
+  top: -1.5rem;
+}
+
+.missionContainer {
+  background-color: $secondaryBackground;
+  width: 85%;
+  margin: 0 10% 0 15%;
+  padding: 21rem 2rem 2rem 2rem;
+}
+
+.missionText h2 {
+  margin-bottom: .25rem;
+}
+.missionText span {
+  margin-bottom: 1.5rem;
+  display: inline-block;
+}
+
+.missionText span a:link,
+.missionText span a:visited, {
+  color: $secondaryColor;
+  text-decoration: none;
+  transition: all .2s;
+}
+
+.missionText span a:hover,
+.missionText span a:active { color: $footerBackground; }
+
+.missionText ul {
+  list-style: none;
+}
+
+.missionText ul li {
+  margin-left: 1rem;
+}
+
+.missionText ul li::before {
+  content: "\25CF"; 
+  font-size: 1rem;
+  color: $accentColor;
+  font-weight: bold;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+} // Solution found at - https://www.w3schools.com/howto/howto_css_bullet_color.asp
 
 .blog {
   width: 70%;

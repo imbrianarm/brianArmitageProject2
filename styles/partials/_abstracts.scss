@@ -11,3 +11,16 @@ $whatsappColor: #25d366; // whatsapp green
 
 $primaryFont: 'Chathura', sans-serif;
 $secondaryFont: 'Tulpen One', cursive;
+
+@mixin breakpoint-phone-small {
+     @media (max-width: 400px) { @content };
+}
+@mixin breakpoint-phone {
+     @media (max-width: 600px) { @content };
+}
+@mixin breakpoint-tablet-port {
+     @media (max-width: 900px) { @content };
+}
+@mixin breakpoint-tablet-land {
+     @media (max-width: 1200px) { @content };
+}
