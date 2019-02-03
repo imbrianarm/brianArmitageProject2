@@ -24,3 +24,6 @@ $secondaryFont: 'Tulpen One', cursive;
 @mixin breakpoint-tablet-land {
      @media (max-width: 1200px) { @content };
 }
+@mixin breakpoint-desktop-small {
+     @media (max-width: 1400px) { @content };
+}

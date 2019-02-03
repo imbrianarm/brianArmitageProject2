@@ -1,5 +1,9 @@
 html {
   font-size: 125%;
+
+  @include breakpoint-tablet-land {
+    font-size: 112.5%;
+  }
 }
 
 body {
@@ -9,6 +13,10 @@ body {
   background-color: $primaryColor;
   letter-spacing: .095rem;
   line-height: .8;
+
+  @include breakpoint-tablet-port {
+    font-size: 1.5rem;
+  }
 }
 
 .wrapper {
