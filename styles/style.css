@@ -164,6 +164,9 @@ html {
   @media (max-width: 1200px) {
     html {
       font-size: 112.5%; } }
+  @media (max-width: 400px) {
+    html {
+      font-size: 100%; } }
 
 body {
   font-family: "Chathura", sans-serif;
@@ -287,9 +290,9 @@ input[type=submit] {
     -webkit-transform: translateX(-100%);
     -ms-transform: translateX(-100%);
     transform: translateX(-100%);
-    -webkit-transition: all .2s;
-    -o-transition: all .2s;
-    transition: all .2s; } }
+    -webkit-transition: all cubic-bezier(0.58, 0, 0.54, 1.65) 0.5s;
+    -o-transition: all cubic-bezier(0.58, 0, 0.54, 1.65) 0.5s;
+    transition: all cubic-bezier(0.58, 0, 0.54, 1.65) 0.5s; } }
 
 .mainNav ul {
   display: -webkit-box;
@@ -349,9 +352,9 @@ input[type=submit] {
   display: none; }
 
 .hamburgerButton:checked + .mainNav {
-  -webkit-transform: translateX(100%);
-  -ms-transform: translateX(100%);
-  transform: translateX(100%); }
+  -webkit-transform: translateX(0);
+  -ms-transform: translateX(0);
+  transform: translateX(0); }
 
 .hamburger {
   position: absolute;
@@ -704,6 +707,9 @@ header .wrapper {
   @media (max-width: 1400px) {
     .headerTitle h1 {
       font-size: 10rem; } }
+  @media (max-width: 600px) {
+    .headerTitle h1 {
+      font-size: 7.5rem; } }
 
 .headerTitle span {
   font-family: "Chathura", sans-serif;
@@ -714,6 +720,9 @@ header .wrapper {
   @media (max-width: 1400px) {
     .headerTitle span {
       font-size: 3rem; } }
+  @media (max-width: 400px) {
+    .headerTitle span {
+      font-size: 2.5rem; } }
 
 .headerImage img {
   display: inline-block;
@@ -732,6 +741,9 @@ header .wrapper {
   @media (max-width: 600px) {
     .about {
       padding: 6rem 0 5rem 0; } }
+  @media (max-width: 400px) {
+    .about {
+      padding: 4rem 0 3rem 0; } }
 
 .aboutBox {
   width: 50%;
@@ -750,6 +762,11 @@ header .wrapper {
   text-align: center;
   vertical-align: middle;
   padding-top: .7rem; }
+  @media (max-width: 1200px) {
+    .fas {
+      height: 2.5rem;
+      width: 2.5rem;
+      padding-top: .4rem; } }
 
 .boxText {
   width: 90%;
@@ -757,9 +774,15 @@ header .wrapper {
   @media (max-width: 1200px) {
     .boxText {
       padding: 0 0 2rem 1rem; } }
+  @media (max-width: 400px) {
+    .boxText {
+      padding: 0 0 1rem 1rem; } }
 
 .boxText h2 {
   margin-bottom: 1rem; }
+  @media (max-width: 400px) {
+    .boxText h2 {
+      margin-bottom: .5rem; } }
 
 .planAhead {
   background-color: #220303; }
@@ -892,6 +915,9 @@ header .wrapper {
   @media (max-width: 600px) {
     .host .wrapper {
       width: 80%; } }
+  @media (max-width: 400px) {
+    .host .wrapper {
+      padding: 3rem 0; } }
 
 .host h2 {
   color: #ff8327;
@@ -916,7 +942,10 @@ header .wrapper {
   padding: 7rem 0 7rem 0; }
   @media (max-width: 1200px) {
     .events {
-      padding: 4rem 0 4rem 0; } }
+      padding: 4rem 0; } }
+  @media (max-width: 1200px) {
+    .events {
+      padding: 2rem 0; } }
 
 .events .wrapper {
   -webkit-box-align: center;

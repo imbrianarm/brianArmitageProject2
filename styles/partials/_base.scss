@@ -4,6 +4,10 @@ html {
   @include breakpoint-tablet-land {
     font-size: 112.5%;
   }
+
+  @include breakpoint-phone-small {
+    font-size: 100%;
+  }
 }
 
 body {
