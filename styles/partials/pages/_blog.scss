@@ -1,28 +1,46 @@
 .blogHeader {
   background-image: url(../images/blogHeader1.jpg);
   background-size: cover;
-
-  .wrapper {
-    position: relative;
-  }
 }
 
-// .blogHeading {
-//   align-self: flex-start;
-//   justify-content: center;
-//   margin: auto 0;
-// }
+.blogHeader .wrapper {
+  position: relative;
+
+  @include breakpoint-desktop-smaller {
+    flex-direction: column;
+  }
+}
 
 .mission {
   width: 30%;
   margin-top: 5rem;
   position: relative;
+
+  @include breakpoint-desktop-smaller {
+    width: 100%;
+    margin: 3rem 0;
+  }
 }
 
 .missionImage {
   position: absolute;
   left: 0;
   top: -1.5rem;
+
+  @include breakpoint-desktop-smaller {
+    position: static;
+    width: 50%;
+    display: flex;
+    align-items: center;
+  }
+
+  @include breakpoint-phone {
+    width: 100%;
+  }
+}
+
+.missionImage img {
+  width: 100%;
 }
 
 .missionContainer {
@@ -30,6 +48,32 @@
   width: 85%;
   margin: 0 10% 0 15%;
   padding: 21rem 2rem 2rem 2rem;
+
+  @include breakpoint-desktop-smaller {
+    width: 80%;
+    margin: 0 10%;
+    padding: 2rem;
+    display: flex;  
+  }
+
+  @include breakpoint-phone {
+    flex-direction: column;
+  }
+}
+
+.missionText {
+  @include breakpoint-desktop-smaller {
+    width: 50%;
+    padding-left: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  @include breakpoint-phone {
+    width: 100%;
+    padding-top: 2rem;
+  }
 }
 
 .missionText h2 {
@@ -71,6 +115,11 @@
 .blog {
   width: 70%;
   padding-left: 5rem;
+
+  @include breakpoint-desktop-smaller {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 .blogImage img {
@@ -78,6 +127,11 @@
   top: -8rem;
   width: 100%;
   box-shadow: -1rem 1rem 0px 0px $secondaryColor;
+
+  @include breakpoint-desktop-smaller {
+    top: 0;
+    box-shadow: none;
+  }
 }
 
 .blogMain {
@@ -86,6 +140,13 @@
   position: relative;
   top: -8rem;
   left: -.5rem;
+
+  @include breakpoint-desktop-smaller {
+    top: 0;
+    left: 0;
+    box-shadow: none;
+    padding: 2rem 10%;
+  }
 }
 
 .blogMain h2:nth-of-type(1) {
@@ -108,19 +169,50 @@
 
   h2 {
     padding-bottom: 1.5rem;
+
+    @include breakpoint-phone-small {
+      padding-bottom: 0;
+    }
+  }
+
+  @include breakpoint-desktop-smaller {
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: $secondaryBackground;
+    padding: 2rem 10%;
   }
 }
 
 .blogComments div:first-of-type {
   margin-bottom: 4rem;
+
+  @include breakpoint-phone-small {
+    margin: 1.5rem 0;
+  }
+}
+
+.blogCommentsImage {
+  @include breakpoint-phone-small {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .blogCommentsBox {
   display: flex;
+
+  @include breakpoint-phone-small {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .blogCommentsText {
  padding-left: 2rem;
+
+ @include breakpoint-phone-small {
+    padding: 0;
+  }
 }
 
 .blogCommentsText h2 {
@@ -133,12 +225,22 @@
 .blogForm {
   padding: 0 10% 0 7%;
   margin-bottom: 5rem;
+
+  @include breakpoint-desktop-smaller {
+    padding: 2rem 10%;
+    margin: 0;
+  }
 }
 
 .blogForm form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
+
+  @include breakpoint-phone-small {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 

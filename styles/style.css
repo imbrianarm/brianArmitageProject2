@@ -287,9 +287,9 @@ input[type=submit] {
   .mainNav {
     -ms-flex-item-align: start;
     align-self: flex-start;
-    -webkit-transform: translateX(-100%);
-    -ms-transform: translateX(-100%);
-    transform: translateX(-100%);
+    -webkit-transform: translateX(-1000px);
+    -ms-transform: translateX(-1000px);
+    transform: translateX(-1000px);
     -webkit-transition: all cubic-bezier(0.58, 0, 0.54, 1.65) 0.5s;
     -o-transition: all cubic-bezier(0.58, 0, 0.54, 1.65) 0.5s;
     transition: all cubic-bezier(0.58, 0, 0.54, 1.65) 0.5s; } }
@@ -405,6 +405,11 @@ input[type=email] {
   border-bottom: 0.1rem solid #ff8327;
   background-color: #111010;
   padding: 0 0 2rem 1.5rem; }
+  @media (max-width: 400px) {
+    input[type=text],
+    input[type=email] {
+      padding: 0 0 1rem 1.5rem;
+      margin-bottom: 1rem; } }
 
 input::-webkit-input-placeholder,
 textarea::-webkit-input-placeholder {
@@ -445,6 +450,9 @@ textarea {
   background-color: #111010;
   resize: none;
   padding: 1rem 0 0 1.5rem; }
+  @media (max-width: 400px) {
+    textarea {
+      margin-bottom: 1rem; } }
 
 input[type="submit"] {
   -ms-grid-column: 1;
@@ -557,24 +565,85 @@ input[type="submit"] {
 .blogHeader {
   background-image: url(../images/blogHeader1.jpg);
   background-size: cover; }
-  .blogHeader .wrapper {
-    position: relative; }
+
+.blogHeader .wrapper {
+  position: relative; }
+  @media (max-width: 1300px) {
+    .blogHeader .wrapper {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .mission {
   width: 30%;
   margin-top: 5rem;
   position: relative; }
+  @media (max-width: 1300px) {
+    .mission {
+      width: 100%;
+      margin: 3rem 0; } }
 
 .missionImage {
   position: absolute;
   left: 0;
   top: -1.5rem; }
+  @media (max-width: 1300px) {
+    .missionImage {
+      position: static;
+      width: 50%;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
+  @media (max-width: 600px) {
+    .missionImage {
+      width: 100%; } }
+
+.missionImage img {
+  width: 100%; }
 
 .missionContainer {
   background-color: #220303;
   width: 85%;
   margin: 0 10% 0 15%;
   padding: 21rem 2rem 2rem 2rem; }
+  @media (max-width: 1300px) {
+    .missionContainer {
+      width: 80%;
+      margin: 0 10%;
+      padding: 2rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; } }
+  @media (max-width: 600px) {
+    .missionContainer {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
+
+@media (max-width: 1300px) {
+  .missionText {
+    width: 50%;
+    padding-left: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }
+
+@media (max-width: 600px) {
+  .missionText {
+    width: 100%;
+    padding-top: 2rem; } }
 
 .missionText h2 {
   margin-bottom: .25rem; }
@@ -613,6 +682,10 @@ input[type="submit"] {
 .blog {
   width: 70%;
   padding-left: 5rem; }
+  @media (max-width: 1300px) {
+    .blog {
+      width: 100%;
+      padding: 0; } }
 
 .blogImage img {
   position: relative;
@@ -620,6 +693,11 @@ input[type="submit"] {
   width: 100%;
   -webkit-box-shadow: -1rem 1rem 0px 0px #ff8327;
   box-shadow: -1rem 1rem 0px 0px #ff8327; }
+  @media (max-width: 1300px) {
+    .blogImage img {
+      top: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none; } }
 
 .blogMain {
   padding: 5rem 10%;
@@ -628,6 +706,13 @@ input[type="submit"] {
   position: relative;
   top: -8rem;
   left: -.5rem; }
+  @media (max-width: 1300px) {
+    .blogMain {
+      top: 0;
+      left: 0;
+      -webkit-box-shadow: none;
+      box-shadow: none;
+      padding: 2rem 10%; } }
 
 .blogMain h2:nth-of-type(1) {
   margin-bottom: -.5rem; }
@@ -645,17 +730,50 @@ input[type="submit"] {
   padding: 0 10% 5rem 10%; }
   .blogComments h2 {
     padding-bottom: 1.5rem; }
+    @media (max-width: 400px) {
+      .blogComments h2 {
+        padding-bottom: 0; } }
+  @media (max-width: 1300px) {
+    .blogComments {
+      margin-top: 0;
+      margin-bottom: 0;
+      background-color: #220303;
+      padding: 2rem 10%; } }
 
 .blogComments div:first-of-type {
   margin-bottom: 4rem; }
+  @media (max-width: 400px) {
+    .blogComments div:first-of-type {
+      margin: 1.5rem 0; } }
+
+@media (max-width: 400px) {
+  .blogCommentsImage {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; } }
 
 .blogCommentsBox {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+  @media (max-width: 400px) {
+    .blogCommentsBox {
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center; } }
 
 .blogCommentsText {
   padding-left: 2rem; }
+  @media (max-width: 400px) {
+    .blogCommentsText {
+      padding: 0; } }
 
 .blogCommentsText h2 {
   color: #ff8327;
@@ -666,6 +784,10 @@ input[type="submit"] {
 .blogForm {
   padding: 0 10% 0 7%;
   margin-bottom: 5rem; }
+  @media (max-width: 1300px) {
+    .blogForm {
+      padding: 2rem 10%;
+      margin: 0; } }
 
 .blogForm form {
   display: -ms-grid;
@@ -673,6 +795,15 @@ input[type="submit"] {
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem; }
+  @media (max-width: 400px) {
+    .blogForm form {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column; } }
 
 .homeHeader {
   background-image: url(../images/homeImage1.jpg);
