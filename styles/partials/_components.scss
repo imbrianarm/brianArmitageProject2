@@ -29,12 +29,11 @@ header .wrapper {
 
   @include breakpoint-phone {
     width: 100%;
+    height: 20rem;
   }
 }
 
-footer {
-  background-color: $footerBackground;
-}
+footer { background-color: $footerBackground; }
 
 footer p {
   margin: 0 auto;
@@ -52,9 +51,7 @@ h1 {
   line-height: 4.735rem;
   letter-spacing: .13rem;
 
-  @include breakpoint-tablet-port {
-    font-size: 3rem;
-  }
+  @include breakpoint-tablet-port { font-size: 3rem; }
 }
 
 h2 {
@@ -63,9 +60,7 @@ h2 {
   line-height: 2.9rem;
   letter-spacing: .11rem;
 
-  @include breakpoint-tablet-port {
-    font-size: 2.5rem;
-  }
+  @include breakpoint-tablet-port { font-size: 2.5rem; }
 }
 
 ul {
@@ -73,13 +68,9 @@ ul {
   padding: 0;
 }
 
-p {
-  margin: 0;
-}
+p { margin: 0; }
 
-img {
-  display: inline-block;
-}
+img { display: inline-block; }
 
 button,
 input[type=submit] {
@@ -93,13 +84,9 @@ input[type=submit] {
 }
 
 button:hover,
-input[type=submit]:hover {
-	background-color: $footerBackground;
-}
+input[type=submit]:hover { background-color: $footerBackground; }
 
-input[type=submit] {
-  width: 100%;
-}
+input[type=submit] { width: 100%; }
 
 .mainNav {
   @include breakpoint-phone {
@@ -115,7 +102,7 @@ input[type=submit] {
 
   @include breakpoint-phone {
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     background-color: $footerBackground;
     padding: .5rem 1rem;
   }
@@ -124,15 +111,15 @@ input[type=submit] {
 .mainNav li {
   list-style: none;
   display: inline-block;
-  padding: 2rem 2rem;
+  padding: 2rem;
 
-  @include breakpoint-tablet-land {
-    padding: 1.5rem 1.5rem;
-  }
+  @include breakpoint-tablet-land { padding: 1.5rem; }
 
-  @include breakpoint-phone {
-    padding: 0;
-  }
+  @include breakpoint-phone { padding: 0; }
+}
+
+.mainNav li:nth-child(3) {
+  @include breakpoint-phone-big { padding: 0; }
 }
 
 .mainNav a:link,
@@ -145,25 +132,17 @@ input[type=submit] {
   text-decoration: none;
   transition: all .2s;
 
-  @include breakpoint-tablet-land {
-    font-size: 1.5rem;
-  }
+  @include breakpoint-tablet-land { font-size: 1.5rem; }
 
-  @include breakpoint-tablet-port {
-    font-size: 1.2rem;
-  }
+  @include breakpoint-tablet-port { font-size: 1.2rem; }
 }
 
 .mainNav a:hover,
 .mainNav a:active { color: $secondaryColor; }
 
-.hamburgerButton {
-  display: none;
-}
+.hamburgerButton { display: none; }
 
-.hamburgerButton:checked + .mainNav {
-  transform: translateX(0);
-}
+.hamburgerButton:checked + .mainNav { transform: translateX(0); }
 
 .hamburger {
   position: absolute;
@@ -174,9 +153,7 @@ input[type=submit] {
   cursor: pointer;
   z-index: 100;
 
-  @include breakpoint-phone {
-    visibility: visible;
-  }
+  @include breakpoint-phone { visibility: visible; }
 }
 
 .hamburger img:hover { cursor: pointer; }
@@ -188,9 +165,7 @@ input[type=submit] {
   font-weight: 400;
   display: inline-block;
 
-  @include breakpoint-tablet-land {
-    font-size: 3rem;
-  }
+  @include breakpoint-tablet-land { font-size: 3rem; }
 
   @include breakpoint-phone {
     font-size: 3rem;
@@ -204,9 +179,9 @@ input[type=submit] {
   top: 50%;
   transform: translateY(-50%);
 
-  h1 {
-    font-size: 7rem;
-  }
+  h1 { font-size: 7rem; }
+
+  @include breakpoint-phone { padding-left: 2rem; }
 }
 
 input[type=text],
@@ -218,7 +193,7 @@ input[type=email] {
   background-color: $primaryColor;
   padding: 0 0 2rem 1.5rem;
 
-  @include breakpoint-phone-small {
+  @include breakpoint-phone {
     padding: 0 0 1rem 1.5rem;
     margin-bottom: 1rem;
   }
@@ -242,11 +217,7 @@ textarea {
   resize: none;
   padding: 1rem 0 0 1.5rem;
 
-  @include breakpoint-phone-small {
-    margin-bottom: 1rem;
-  }
+  @include breakpoint-phone { margin-bottom: 1rem; }
 }
 
-input[type="submit"] {
-  grid-column: 1 / 3;  
-}
+input[type="submit"] { grid-column: 1 / 3; }

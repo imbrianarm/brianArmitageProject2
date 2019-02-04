@@ -3,7 +3,7 @@ $secondaryColor: #ff8327; //dusty orange
 $accentColor: #bf2603; // rust red
 $accentColor2: #ffffff; // off-white
 $secondaryBackground: #220303; // dark red
-$footerBackground: #2F4F4F; // dark slate grey
+$footerBackground: #2c2c2c; // dark grey
 $facebookColor: #3b5998; // facebook blue
 $instagramColor: #c32aa3; // instagram magenta
 $twitterColor: #1da1f2; // twitter blue
@@ -15,18 +15,27 @@ $secondaryFont: 'Tulpen One', cursive;
 @mixin breakpoint-phone-small {
      @media (max-width: 400px) { @content };
 }
+
 @mixin breakpoint-phone {
      @media (max-width: 600px) { @content };
 }
+
+@mixin breakpoint-phone-big {
+     @media (max-width: 700px) { @content };
+}
+
 @mixin breakpoint-tablet-port {
      @media (max-width: 900px) { @content };
 }
+
 @mixin breakpoint-tablet-land {
      @media (max-width: 1200px) { @content };
 }
+
 @mixin breakpoint-desktop-smaller {
      @media (max-width: 1300px) { @content };
 }
+
 @mixin breakpoint-desktop-small {
      @media (max-width: 1400px) { @content };
 }

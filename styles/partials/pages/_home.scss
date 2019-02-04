@@ -28,13 +28,9 @@ header .wrapper {
   letter-spacing: .12rem;
   line-height: 2.5rem;
 
-  @include breakpoint-desktop-small {
-    font-size: 10rem;
-  }
+  @include breakpoint-desktop-small { font-size: 10rem; }
 
-  @include breakpoint-phone {
-    font-size: 7.5rem;
-  }
+  @include breakpoint-phone { font-size: 7.5rem; }
 }
 
 .headerTitle span {
@@ -44,13 +40,9 @@ header .wrapper {
   color: $accentColor2;
   letter-spacing: .13rem;
 
-  @include breakpoint-desktop-small {
-    font-size: 3rem;
-  }
+  @include breakpoint-desktop-small { font-size: 3rem; }
 
-  @include breakpoint-phone-small {
-    font-size: 2.5rem;
-  }
+  @include breakpoint-phone-small { font-size: 2.5rem; }
 }
 
 .headerImage img {
@@ -59,34 +51,24 @@ header .wrapper {
   right: 0;
   bottom: -5rem;
 
-  @include breakpoint-desktop-small {
-    width: 50%;
-  }
+  @include breakpoint-desktop-small { width: 50%; }
 
-  @include breakpoint-phone {
-    bottom: -2.5rem;
-  }
+  @include breakpoint-phone { bottom: -2.5rem; }
 }
 
 .about {
   padding: 9rem 0 5rem 0;
 
-  @include breakpoint-phone {
-    padding: 6rem 0 5rem 0;
-  }
+  @include breakpoint-phone { padding: 6rem 0 5rem 0; }
 
-  @include breakpoint-phone-small {
-    padding: 4rem 0 3rem 0;
-  }
+  @include breakpoint-phone-small { padding: 4rem 0 3rem 0; }
 }
 
 .aboutBox {
   width: 50%;
   display: flex;
 
-  @include breakpoint-phone {
-    width: 100%;
-  }
+  @include breakpoint-phone { width: 100%; }
 }
 
 .fas {
@@ -98,7 +80,7 @@ header .wrapper {
   vertical-align: middle;
   padding-top: .7rem;
 
-  @include breakpoint-tablet-land {
+  @include breakpoint-tablet-port {
     height: 2.5rem;
     width: 2.5rem;
     padding-top: .4rem;
@@ -109,35 +91,25 @@ header .wrapper {
   width: 90%;
   padding: 0 0 5rem 1rem;
 
-  @include breakpoint-tablet-land {
-    padding: 0 0 2rem 1rem;
-  }
+  @include breakpoint-tablet-land { padding: 0 0 2rem 1rem; }
 
-  @include breakpoint-phone-small {
-    padding: 0 0 1rem 1rem;
-  }
+  @include breakpoint-phone-small { padding: 0 0 1rem 1rem; }
 }
 
 .boxText h2 {
   margin-bottom: 1rem;
 
-  @include breakpoint-phone-small {
-    margin-bottom: .5rem;
-  }
+  @include breakpoint-phone-small { margin-bottom: .5rem; }
 }
 
-.planAhead {
-  background-color: $secondaryBackground
-}
+.planAhead { background-color: $secondaryBackground }
 
 .planAhead .wrapper {
   display: grid;
   grid-template-rows: repeat(2, 22rem);
   grid-template-columns: repeat(2, 1fr);
 
-  @include breakpoint-desktop-small {
-    align-items: center;
-  }
+  @include breakpoint-desktop-small { align-items: center; }
 
   @include breakpoint-phone {
     display: flex;
@@ -164,26 +136,18 @@ header .wrapper {
   top: -3rem;
   box-shadow: 1rem 1rem 0px 0px $secondaryColor;
 
-  @include breakpoint-desktop-small {
-    position: static;
-  }
+  @include breakpoint-desktop-small { position: static; }
 
-  @include breakpoint-phone {
-    width: 75%;
-  }
+  @include breakpoint-phone { width: 75%; }
 }
 
 .planAheadTextBox1 {
   padding: 0 20% 3rem 10%;
   align-self: end;
 
-  @include breakpoint-tablet-land {
-    padding: 0 0 1rem 10%;
-  }
+  @include breakpoint-tablet-land { padding: 0 0 1rem 10%; }
 
-  @include breakpoint-phone {
-      padding: 1rem 10% 1rem 10%;
-    }
+  @include breakpoint-phone { padding: 1rem 10% 1rem 10%; }
 }
 
 .planAheadTextBox1 p,
@@ -212,22 +176,16 @@ header .wrapper {
   bottom: -3rem;
   box-shadow: -1rem 1rem 0px 0px $secondaryColor;
 
-  @include breakpoint-desktop-small {
-    position: static;
-  }
+  @include breakpoint-desktop-small { position: static; }
 
-  @include breakpoint-phone {
-      width: 75%;
-    }
+  @include breakpoint-phone { width: 75%; }
 }
 
 .planAheadTextBox2 {
   padding: 3rem 10% 0 20%;
   text-align: right;
 
-  @include breakpoint-tablet-land {
-    padding: 1rem 10% 0 0;
-  }
+  @include breakpoint-tablet-land { padding: 1rem 10% 0 0; }
 
   @include breakpoint-phone {
       padding: 1rem 10% 2rem 10%;
@@ -239,17 +197,11 @@ header .wrapper {
   padding: 9rem 0 7rem 0;
   text-align: center;
 
-  @include breakpoint-desktop-small {
-    padding: 4rem 0 5rem 0;
-  }
+  @include breakpoint-desktop-small { padding: 4rem 0 5rem 0; }
 
-  @include breakpoint-phone {
-    width: 80%;
-  }
+  @include breakpoint-phone { width: 80%; }
 
-  @include breakpoint-phone-small {
-    padding: 3rem 0;
-  }
+  @include breakpoint-phone-small { padding: 3rem 0; }
 }
 
 .host h2 {
@@ -270,19 +222,17 @@ header .wrapper {
 
 .bannerImage img {
   width: 100%;
-  align-self: center;
+  min-height: 20rem;
+  object-fit: none;
+  object-position: 100% 50%;
 }
 
 .events {
   padding: 7rem 0 7rem 0;
 
-  @include breakpoint-tablet-land {
-    padding: 4rem 0;
-  }
+  @include breakpoint-tablet-land { padding: 4rem 0; }
 
-  @include breakpoint-tablet-land {
-    padding: 2rem 0;
-  }
+  @include breakpoint-tablet-land { padding: 2rem 0; }
 }
 
 .events .wrapper {
@@ -298,17 +248,13 @@ header .wrapper {
 .eventsImageBox {
   width: 33.333%;
   
-  @include breakpoint-phone {
-    width: 75%;
-  }
+  @include breakpoint-phone { width: 75%; }
 }
 
 .eventsImageBox img {
   box-shadow: -1rem 1rem 0px 0px $secondaryColor;
 
-  @include breakpoint-tablet-land {
-    width: 90%;
-  }
+  @include breakpoint-tablet-land { width: 90%; }
 }
 
 .eventsTextBox {
@@ -332,11 +278,11 @@ header .wrapper {
 
 .imageGallery {
   background-color: $secondaryBackground;
-  padding: 6rem 0 6rem 0;
+  padding: 6rem 0;
 
-  @include breakpoint-tablet-land {
-    padding: 4rem 0 4rem;
-  }
+  @include breakpoint-tablet-land { padding: 4rem 0; }
+
+  @include breakpoint-phone { padding: 2rem 0; }
 }
 
 .imageGallery ul {
@@ -361,7 +307,5 @@ header .wrapper {
 .imageGallery img {
   width: 100%;
 
-  @include breakpoint-phone {
-    width: 75%;
-  }
+  @include breakpoint-phone { width: 75%; }
 }

@@ -1,13 +1,9 @@
 html {
   font-size: 125%;
 
-  @include breakpoint-tablet-land {
-    font-size: 112.5%;
-  }
+  @include breakpoint-tablet-land { font-size: 112.5%; }
 
-  @include breakpoint-phone-small {
-    font-size: 100%;
-  }
+  @include breakpoint-phone-small { font-size: 100%; }
 }
 
 body {
@@ -18,9 +14,7 @@ body {
   letter-spacing: .095rem;
   line-height: .8;
 
-  @include breakpoint-tablet-port {
-    font-size: 1.5rem;
-  }
+  @include breakpoint-tablet-port { font-size: 1.5rem; }
 }
 
 .wrapper {

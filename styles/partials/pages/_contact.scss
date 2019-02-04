@@ -7,6 +7,15 @@
   width: 30%;
   padding-top: 5rem;
   padding-right: 4rem;
+
+  @include breakpoint-tablet-port {
+    width: 100%;
+    padding:2rem;
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end;
+    text-align: right;
+  }
 }
 
 .icons ul{
@@ -21,14 +30,16 @@
   font-size: 1.5rem;
 }
 
-.icons li:first-child {
-  padding-left: 0;
+.icons li:first-child { padding-left: 0; }
+
+.icons li:last-child {
+  @include breakpoint-tablet-port {
+    padding-right: 0;
+  }
 }
 
 .icons a:link,
-.icons a:visited {
-  color: $accentColor2;
-}
+.icons a:visited { color: $accentColor2; }
 
 .fa-facebook-f:hover,
 .fa-facebook-f:active { 
@@ -77,12 +88,29 @@
   box-shadow: 1rem 1rem 0px 0px $secondaryColor;
   position: relative;
   top: -10rem;
+
+  @include breakpoint-tablet-port {
+    top: 0;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+  @include breakpoint-phone-small {
+    box-shadow: none;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
 }
 
 .contactForm form {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 3rem;
+
+  @include breakpoint-phone {
+    display: flex;
+    flex-direction: column;
+  }
 }
 
 .contactForm input[type=text],

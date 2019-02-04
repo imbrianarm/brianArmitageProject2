@@ -39,9 +39,7 @@
   }
 }
 
-.missionImage img {
-  width: 100%;
-}
+.missionImage img { width: 100%; }
 
 .missionContainer {
   background-color: $secondaryBackground;
@@ -56,9 +54,7 @@
     display: flex;  
   }
 
-  @include breakpoint-phone {
-    flex-direction: column;
-  }
+  @include breakpoint-phone { flex-direction: column; }
 }
 
 .missionText {
@@ -76,9 +72,7 @@
   }
 }
 
-.missionText h2 {
-  margin-bottom: .25rem;
-}
+.missionText h2 { margin-bottom: .25rem; }
 .missionText span {
   margin-bottom: 1.5rem;
   display: inline-block;
@@ -94,13 +88,9 @@
 .missionText span a:hover,
 .missionText span a:active { color: $footerBackground; }
 
-.missionText ul {
-  list-style: none;
-}
+.missionText ul { list-style: none; }
 
-.missionText ul li {
-  margin-left: 1rem;
-}
+.missionText ul li { margin-left: 1rem; }
 
 .missionText ul li::before {
   content: "\25CF"; 
@@ -149,25 +139,21 @@
   }
 }
 
-.blogMain h2:nth-of-type(1) {
-  margin-bottom: -.5rem;
-}
+.blogMain h2:nth-of-type(1) { margin-bottom: -.5rem; }
 
 .blogMain h2:nth-of-type(2) {
   color: $secondaryColor;
   font-size: 1.95rem;
 }
 
-.blogMain p {
-  padding: 1rem 0;
-}
+.blogMain p { padding: 1rem 0; }
 
 .blogComments {
   margin-top: -5rem;
   margin-bottom: -5rem;
   padding: 0 10% 5rem 10%;
 
-  h2 {
+  h2 { 
     padding-bottom: 1.5rem;
 
     @include breakpoint-phone-small {
@@ -208,7 +194,7 @@
 }
 
 .blogCommentsText {
- padding-left: 2rem;
+  padding-left: 2rem;
 
  @include breakpoint-phone-small {
     padding: 0;
@@ -237,12 +223,8 @@
   grid-template-columns: repeat(2, 1fr);
   grid-gap: 2rem;
 
-  @include breakpoint-phone-small {
+  @include breakpoint-phone {
     display: flex;
     flex-direction: column;
   }
 }
-
-
-
-
