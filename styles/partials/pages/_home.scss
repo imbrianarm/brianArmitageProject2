@@ -143,7 +143,7 @@ header .wrapper {
 
 .planAheadTextBox1 {
   padding: 0 20% 3rem 10%;
-  align-self: end;
+  align-self: flex-end;
 
   @include breakpoint-tablet-land { padding: 0 0 1rem 10%; }
 
@@ -184,6 +184,7 @@ header .wrapper {
 .planAheadTextBox2 {
   padding: 3rem 10% 0 20%;
   text-align: right;
+  align-self: flex-start;
 
   @include breakpoint-tablet-land { padding: 1rem 10% 0 0; }
 

@@ -1032,8 +1032,7 @@ header .wrapper {
 .planAheadTextBox1 {
   padding: 0 20% 3rem 10%;
   -ms-flex-item-align: end;
-  -ms-grid-row-align: end;
-  align-self: end; }
+  align-self: flex-end; }
   @media (max-width: 1200px) {
     .planAheadTextBox1 {
       padding: 0 0 1rem 10%; } }
@@ -1084,7 +1083,9 @@ header .wrapper {
 
 .planAheadTextBox2 {
   padding: 3rem 10% 0 20%;
-  text-align: right; }
+  text-align: right;
+  -ms-flex-item-align: start;
+  align-self: flex-start; }
   @media (max-width: 1200px) {
     .planAheadTextBox2 {
       padding: 1rem 10% 0 0; } }
