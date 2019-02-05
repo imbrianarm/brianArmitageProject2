@@ -103,8 +103,9 @@ input[type=submit] { width: 100%; }
   @include breakpoint-phone {
     flex-direction: column;
     align-items: center;
-    background-color: $footerBackground;
+    background-color: $secondaryBackground;
     padding: .5rem 1rem;
+    box-shadow: .25rem .25rem 0px 0px $secondaryColor;
   }
 }
 
