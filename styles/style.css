@@ -325,7 +325,7 @@ input[type=submit] {
       padding: 1.5rem; } }
   @media (max-width: 600px) {
     .mainNav li {
-      padding: 0; } }
+      padding: .5rem; } }
 
 @media (max-width: 700px) {
   .mainNav li:nth-child(3) {
@@ -350,6 +350,10 @@ input[type=submit] {
     .mainNav a:link,
     .mainNav a:visited {
       font-size: 1.2rem; } }
+  @media (max-width: 600px) {
+    .mainNav a:link,
+    .mainNav a:visited {
+      font-size: 2rem; } }
 
 .mainNav a:hover,
 .mainNav a:active {

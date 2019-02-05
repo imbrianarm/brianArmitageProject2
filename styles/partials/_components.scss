@@ -116,7 +116,7 @@ input[type=submit] { width: 100%; }
 
   @include breakpoint-tablet-land { padding: 1.5rem; }
 
-  @include breakpoint-phone { padding: 0; }
+  @include breakpoint-phone { padding: .5rem; }
 }
 
 .mainNav li:nth-child(3) {
@@ -136,6 +136,8 @@ input[type=submit] { width: 100%; }
   @include breakpoint-tablet-land { font-size: 1.5rem; }
 
   @include breakpoint-tablet-port { font-size: 1.2rem; }
+
+  @include breakpoint-phone { font-size: 2rem; }
 }
 
 .mainNav a:hover,
