@@ -1,3 +1,7 @@
+//RE-USABLE ELEMENT STYLING
+
+//WRAPPER SETUP
+
 .about .wrapper,
 .events .wrapper,
 .imageGallery .wrapper, 
@@ -33,12 +37,16 @@ header .wrapper {
   }
 }
 
+//FOOTER SETUP
+
 footer { background-color: $footerBackground; }
 
 footer p {
   margin: 0 auto;
   padding: .5rem 0;
 }
+
+//HEADINGS SETUP
 
 h1, h2, h3 {
   margin: 0;
@@ -63,14 +71,15 @@ h2 {
   @include breakpoint-tablet-port { font-size: 2.5rem; }
 }
 
-ul {
-  margin: 0;
-  padding: 0;
-}
+//PARAGRAPH SETUP
 
 p { margin: 0; }
 
+//IMAGE SETUP
+
 img { display: inline-block; }
+
+//BUTTON SETUP
 
 button,
 input[type=submit] {
@@ -87,6 +96,13 @@ button:hover,
 input[type=submit]:hover { background-color: $footerBackground; }
 
 input[type=submit] { width: 100%; }
+
+//NAVIGATION SETUP
+
+ul {
+  margin: 0;
+  padding: 0;
+}
 
 .mainNav {
   @include breakpoint-phone {
@@ -181,6 +197,8 @@ input[type=submit] { width: 100%; }
     display: none;
   }
 }
+
+//BLOG FORM SETUP
 
 .blogHeading {
   position: absolute;

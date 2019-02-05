@@ -1,7 +1,12 @@
+//HEADER SECTION ENDS HERE
+
 .contactHeader {
   background-image: url(../images/contactHeader1.jpg);
   background-size: cover;
 }
+
+//HEADER SECTION ENDS HERE
+//CONTACT INFO SECTION STARTS HERE
 
 .contactInfo {
   width: 30%;
@@ -79,6 +84,9 @@
 
 .mailTo:hover,
 .mailTo:active { color: $secondaryColor; }
+
+//CONTACT INFO SECTION ENDS HERE
+//CONTACT FORM SECTION STARTS HERE
 
 .contactForm {
   background-color: $secondaryBackground;

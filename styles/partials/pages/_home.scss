@@ -1,3 +1,5 @@
+//HEADER STARTS HERE
+
 .homeHeader {
   background-image: url(../images/homeImage1.jpg);
   background-size: cover;
@@ -33,12 +35,26 @@ header .wrapper {
   @include breakpoint-phone { font-size: 7.5rem; }
 }
 
+.bigHeading {
+  margin-bottom: 3.5rem;
+
+  @include breakpoint-desktop-small {
+    margin-bottom: 2rem;
+  }
+
+  @include breakpoint-phone {
+    margin-bottom: 1rem;
+  }
+}
+
 .headerTitle span {
   font-family: $primaryFont;
   font-size: 4.16rem;
   font-weight: bold;
   color: $accentColor2;
   letter-spacing: .13rem;
+  display: block;
+  margin-left: .25rem;
 
   @include breakpoint-desktop-small { font-size: 3rem; }
 
@@ -55,6 +71,9 @@ header .wrapper {
 
   @include breakpoint-phone { bottom: -2.5rem; }
 }
+
+//HEADER ENDS HERE
+//ABOUT SECTION STARTS HERE
 
 .about {
   padding: 9rem 0 5rem 0;
@@ -101,6 +120,9 @@ header .wrapper {
 
   @include breakpoint-phone-small { margin-bottom: .5rem; }
 }
+
+//ABOUT SECTION ENDS HERE
+//PLAN AHEAD SECTION STARTS HERE
 
 .planAhead { background-color: $secondaryBackground }
 
@@ -194,6 +216,9 @@ header .wrapper {
     }
 }
 
+//PLAN AHEAD SECTION ENDS HERE
+//HOST SECTION STARTS HERE
+
 .host .wrapper{
   padding: 9rem 0 7rem 0;
   text-align: center;
@@ -221,12 +246,18 @@ header .wrapper {
   display:block;
 }
 
+//HOST SECTION ENDS HERE
+//BANNER IMAGE SECTION STARTS HERE
+
 .bannerImage img {
   width: 100%;
   min-height: 20rem;
   object-fit: none;
   object-position: 100% 50%;
 }
+
+//BANNER IMAGE SECTION ENDS HERE
+//EVENTS SECTION STARTS HERE
 
 .events {
   padding: 7rem 0 7rem 0;
@@ -276,6 +307,9 @@ header .wrapper {
   margin-top: 1rem;
   margin-bottom: 2rem;
 }
+
+//EVENTS SECTION ENDS HERE
+//IMAGE GALLERY SECTION STARTS HERE
 
 .imageGallery {
   background-color: $secondaryBackground;
