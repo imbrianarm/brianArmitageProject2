@@ -145,18 +145,18 @@ legend, button::-moz-focus-inner, input::-moz-focus-inner {
   clip: rect(0 0 0 0);
   overflow: hidden; }
 
-.skip-link {
+.skipLink {
   position: absolute;
   left: -1000px;
   top: 5px;
   z-index: 999; }
 
-.skip-link a:link,
-.skip-link a:visited {
+.skipLink a:link,
+.skipLink a:visited {
   background: white;
   color: black; }
 
-.skip-link:focus {
+.skipLink:focus {
   left: 0; }
 
 html {
