@@ -367,6 +367,9 @@ input[type=submit] {
   -ms-transform: translateX(0);
   transform: translateX(0); }
 
+.hamburgerButton:checked ~ .blogHeading h1 {
+  margin-top: 10rem; }
+
 .hamburger {
   position: absolute;
   top: 1.111rem;
