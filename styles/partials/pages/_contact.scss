@@ -47,27 +47,35 @@
 .icons a:visited { color: $accentColor2; }
 
 .fa-facebook-f:hover,
+.fa-facebook-f:active, 
+.fa-twitter:hover,
+.fa-twitter:active,
+.fa-instagram:hover,
+.fa-instagram:active,
+.fa-whatsapp:hover,
+.fa-whatsapp:active {
+  transition: all .2s;
+  transform: scale(1.5);
+}
+
+.fa-facebook-f:hover,
 .fa-facebook-f:active { 
   color: $facebookColor; 
-  transition: all .2s;
 }
 
 .fa-twitter:hover,
 .fa-twitter:active { 
   color: $twitterColor;
-  transition: all .2s;
 }
 
 .fa-instagram:hover,
 .fa-instagram:active { 
-  color: $instagramColor;
-  transition: all .2s; 
+  color: $instagramColor; 
 }
 
 .fa-whatsapp:hover,
 .fa-whatsapp:active { 
   color: $whatsappColor;
-  transition: all .2s;
 }
 
 .mailTo {
