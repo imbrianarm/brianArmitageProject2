@@ -164,13 +164,9 @@ ul {
 
 .hamburgerButton { display: none; }
 
-.hamburgerButton:checked + .mainNav { 
-  transform: translateX(0); 
-}
+.hamburgerButton:checked + .mainNav { transform: translateX(0); }
 
-.hamburgerButton:checked  ~ .blogHeading { 
-  top: 80%;
-}
+.hamburgerButton:checked  ~ .blogHeading { top: 80%; }
 
 .hamburger {
   position: absolute;
