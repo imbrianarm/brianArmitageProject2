@@ -92,11 +92,14 @@ input[type=submit] {
   border: 0;
   background: $accentColor;
   padding: .5rem 1.6rem;
-  transition: all .2s;
+  transition: all .1s;
 }
 
 button:hover,
-input[type=submit]:hover { background-color: $footerBackground; }
+input[type=submit]:hover { 
+  background-color: $footerBackground; 
+  transform: scale(1.1); 
+}
 
 input[type=submit] { width: 100%; }
 
